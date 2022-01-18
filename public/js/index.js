@@ -13,7 +13,6 @@ $(document).ready(function () {
   }
 
   $('#changeColor').click(() => {
-    console.log('oke')
     $('.nav-wrapper.custom-theme').css('background-color', '#3949ab')
   })
 
