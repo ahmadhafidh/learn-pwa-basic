@@ -55,8 +55,16 @@ a, button {
 
 .custom-theme {
   background-color: #EF5350 !important;
-  /*background-color: #ab47bc !important;*/
-  /*background-color: #3949ab !important;*/
+  /* background-color: #ab47bc !important; */
+  /* background-color: #3949ab !important; */
+}
+
+.custom-theme1 {
+  background-color: black !important;
+}
+
+.custom-theme2 {
+  background-color: gray !important;
 }
 
 .notification-update {

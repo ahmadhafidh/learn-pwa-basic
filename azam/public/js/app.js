@@ -64,3 +64,21 @@ const App = (function() {
     }
   }
 })();
+
+
+
+// Ubah Background
+const satu = document.querySelector('.satu')
+const dua = document.querySelector('.dua')
+
+satu.addEventListener('click', function() {
+  const theme = document.querySelector('.custom-theme')
+    theme.classList.remove('custom-theme2')
+    theme.classList.add('custom-theme1')
+})
+
+dua.addEventListener('click', function() {
+  const theme = document.querySelector('.custom-theme')
+    theme.classList.remove('custom-theme1')
+    theme.classList.add('custom-theme2')
+})
