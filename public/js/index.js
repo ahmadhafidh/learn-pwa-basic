@@ -2,15 +2,20 @@
  *  ====================================
  *  Code App kita
  *  Code di bawah ini tidak perlu diubah
- * 
+ *
  */
-$(document).ready(function() {
-  App.getInstance();
-  
+$(document).ready(function () {
+  App.getInstance()
+
   const options = {
     button: '#update-sw',
     toast: '.notification-update',
-  };
+  }
 
-  new SW(options);
-});
+  $('#changeColor').click(() => {
+    console.log('oke')
+    $('.nav-wrapper.custom-theme').css('background-color', '#3949ab')
+  })
+
+  new SW(options)
+})

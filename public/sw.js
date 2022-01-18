@@ -4,7 +4,7 @@
  *  supaya browser tahu bahwa
  *  ada perubahan terbaru
  */
-const cacheVersion = 'v2-pwa-dasar';
+const cacheVersion = 'v2-pwa-dasar'
 
 const filesToCache = [
   '/',
@@ -21,46 +21,44 @@ const filesToCache = [
   '/fonts/roboto/Roboto-Bold.woff',
   '/fonts/roboto/Roboto-Bold.woff2',
   '/fonts/material-icons/material-icons.woff',
-];
+]
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(cacheVersion)
-      .then(function(cache) {
-        return cache.addAll(filesToCache)
-      })
+    caches.open(cacheVersion).then(function (cache) {
+      return cache.addAll(filesToCache)
+    })
   )
-});
+})
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
   event.respondWith(
-    caches.match(event.request)
-      .then(function(res) {
-        if (res) return res;
+    caches.match(event.request).then(function (res) {
+      if (res) return res
 
-        return fetch(event.request);
-      })
-  );
-});
+      return fetch(event.request)
+    })
+  )
+})
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(function (cacheNames) {
       return Promise.all(
         cacheNames
-          .filter(function(cacheName) {
-            return cacheName !== cacheVersion;
+          .filter(function (cacheName) {
+            return cacheName !== cacheVersion
           })
-          .map(function(cacheName) {
-            caches.delete(cacheName);
+          .map(function (cacheName) {
+            caches.delete(cacheName)
           })
-      );
+      )
     })
-  );
-});
+  )
+})
 
-self.addEventListener('message', function(event) {
+self.addEventListener('message', function (event) {
   if (event.data.action === 'skipWaiting') {
-    self.skipWaiting();
+    self.skipWaiting()
   }
-});
+})
