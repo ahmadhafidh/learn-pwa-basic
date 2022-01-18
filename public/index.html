@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="manifest" href="/manifest.json">
@@ -20,11 +21,16 @@
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <title>PWA Dasar</title>
 </head>
+
 <body>
   <ul id="slide-out" class="side-nav">
     <li><a href="#!">First Link</a></li>
     <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
+    <li><a href="#!" onclick="changeColorBG('#50ed58')">Change Color Green</a></li>
+    <li><a href="#!" onclick="changeColorBG('#d850ed')">Change Color Purple</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
   </ul>
@@ -39,36 +45,40 @@
       </ul>
     </div>
   </nav>
-  
+
   <div id="timeline">
     <div id="preloader">
       <div class="preloader-wrapper small active">
         <div class="spinner-layer spinner-green-only">
           <div class="circle-clipper left">
             <div class="circle"></div>
-          </div><div class="gap-patch">
+          </div>
+          <div class="gap-patch">
             <div class="circle"></div>
-          </div><div class="circle-clipper right">
+          </div>
+          <div class="circle-clipper right">
             <div class="circle"></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <footer class="page-footer custom-theme">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">PWA Dasar</h5>
-          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, culpa, nam eos, quisquam aliquid non, at explicabo pariatur consequatur fugiat fuga! Rem saepe distinctio excepturi corporis, dicta hic! Ea, vel.</p>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur,
+            culpa, nam eos, quisquam aliquid non, at explicabo pariatur consequatur fugiat fuga! Rem saepe distinctio
+            excepturi corporis, dicta hic! Ea, vel.</p>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      © 2017 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        © 2017 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
     </div>
   </footer>
@@ -89,4 +99,5 @@
   <script type="text/javascript" src="/js/sw-controller.js"></script>
   <script type="text/javascript" src="/js/index.js"></script>
 </body>
+
 </html>
