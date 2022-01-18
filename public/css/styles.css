@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url('../fonts/material-icons/material-icons.woff') format('woff');
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/material-icons/material-icons.woff") format("woff");
 }
 
-a, button {
+a,
+button {
   outline: none;
-   -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -54,10 +55,26 @@ a, button {
 }
 
 .custom-theme {
-  background-color: #EF5350 !important;
+  /* background-color: #ef5350 !important; */
   /*background-color: #ab47bc !important;*/
-  /*background-color: #3949ab !important;*/
+  background-color: #3949ab !important;
 }
+
+.header1 {
+  background-color: #289421 !important;
+}
+
+.header2 {
+  background-color: #b0287e !important;
+}
+
+/* li a:hover:not(.active) {
+  background-color: #ab3989;
+} */
+
+/* .first-header {
+  background-color: #ab3989;
+} */
 
 .notification-update {
   position: fixed;
@@ -77,7 +94,7 @@ a, button {
 
 .notification-wrapper > .text-updates {
   flex-basis: 70%;
-  color: #AAA;
+  color: #aaa;
   padding-left: 20px;
 }
 
@@ -89,7 +106,7 @@ a, button {
 .button-updates button,
 .button-updates button:focus,
 .button-updates button:visited {
-  color: #FFF;
+  color: #fff;
   background: none;
   border: none;
 }
